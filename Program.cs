@@ -11,7 +11,7 @@ namespace CamCopy
     {
         public static void NumberMode()
         {
-            Console.WriteLine("Numbering connected cameras ");
+            Console.WriteLine("Numbering connected cameras");
             List<string> ids = new List<string>();
 
             DeviceInfos dei = new DeviceManager().DeviceInfos;
