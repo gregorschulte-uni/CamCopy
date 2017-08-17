@@ -81,9 +81,9 @@ namespace CamCopy
                         image.RotateFlip(RotateFlipType.Rotate180FlipY);
                     }
 
-                    if (crop)
+                    if (crop) //crop image to center third.
                     {
-                        image = cropImage(image, new Rectangle(0, 600, 2000, 1448));
+                        image = cropImage(image, new Rectangle(0, (int)image.Height/3, image.Width, (int)image.Height/3*2));
                     }
 
                     // ImageFile ifile = (ImageFile)item.Transfer();
