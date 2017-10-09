@@ -53,14 +53,14 @@ namespace CamCopy
                                         dtaken.Minute.ToString("00") + "_" +
                                         dtaken.Second.ToString("00") + "_";
 
-                    string imagenumber = "NUM" + (count + 1).ToString("0000")+"_" ;
+                    string imagenumber = "IMG" + (count + 1).ToString("0000")+"_" ;
                     string randomnumber = rnd.Next(99999999).ToString("00000000"); 
 
                     string itemName =   session + 
-                                        camera + 
+                                        camera +
+                                        position +
                                         imagenumber + 
                                         fish  +  
-                                        position + 
                                         timestamp +
                                         randomnumber + 
                                         ".jpg"  ;
